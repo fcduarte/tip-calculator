@@ -15,6 +15,9 @@ import com.fcduarte.tipcalculator.model.Bill;
 
 public class MainActivity extends Activity {
 
+	private static final String ZERO_AMOUNT = "0.00";
+	private static final int PERCENTAGE_FACTOR = 10000;
+	
 	private Bill mBill;
 	private EditText etSubTotal;
 	private TextView tvTotal;
@@ -59,7 +62,7 @@ public class MainActivity extends Activity {
 
 			@Override
 			public void afterTextChanged(Editable s) {
-				String subTotal = "0.00";
+				String subTotal = ZERO_AMOUNT;
 
 				if (s.length() > 0) {
 					subTotal = s.toString();
@@ -85,7 +88,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress,
 					boolean fromUser) {
-				mBill.setTipPercentage(Double.valueOf(progress) / 10000);
+				mBill.setTipPercentage(Double.valueOf(progress) / PERCENTAGE_FACTOR);
 				bindDataToViews();
 			}
 		};
