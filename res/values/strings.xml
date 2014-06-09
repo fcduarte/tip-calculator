@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculator</string>
+    <string name="bill_label">How much was your bill?</string>
+    <string name="service_label">How was your service?</string>
+    <string name="total_tip_label">Tip</string>
+    <string name="tip_percentage_label">Tip Percentage</string>
+
+</resources>
