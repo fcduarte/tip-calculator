@@ -1,5 +1,4 @@
 # Tip Calculator Demo
-==============
 
 An Android sample app for calculating tips.
 
@@ -22,4 +21,4 @@ Spent some time creating a customized image to represent a real receipt
 
 Walkthrough of all user stories:
 
-<gif>
+![Video Walkthrough](tip-calculator.gif)
